@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blanco Design</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/project-1.css"/>
+    </head>
+
+    <body>
+        <div class="nav container">
+            <a href="index.html">
+                <img src="img/Final Logo.png" alt="Logo">
+            </a>
+        <nav>
+            <ul>
+                <li><a href="index.html#Works">Works</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="slideshow">
+
+            <div class="slide active">
+                <img src="img/Final Savia Brand Guide.png">
+            </div>
+
+            <div class="slide">
+                <img src="img/Free_Stationery_Mockup_6-2.png">
+            </div>
+
+            <div class="slide">
+                <img src="img/Billboard_Mockup_revised.png">
+            </div>
+
+            <button class="prev">←</button>
+            <button class="next">→</button>
+
+        </div>
+
+
+        <section id="Works" class="Works">
+            <article>
+                <div class="Title">
+                    <h1>Rantings of a Mad Women: Book  </h1>
+                    <h3> 9 x 6 inches </h3>
+                    <div class="empty"></div>
+                    <p>
+                        The guide examines symptoms of Attention-Deficit/Hyperactivity Disorder as experienced by women, combining research-based information with personal narrative. Initial sections outline the purpose of the publication and summarize commonly recommended coping strategies sourced from online materials. A compiled forum of firsthand accounts follows, presented in a diary format to emphasize individual voice and collective experience within the subculture. Multicolored pages function as a visual system, referencing the spectrum of symptoms and variability across individuals. The cover utilizes holographic material that shifts color based on light and viewing angle, reinforcing themes of variation and perception. Bold typographic contrast establishes hierarchy and clarity while maintaining a structured and professional exterior. 
+                    </p>
+                </div>
+            </article>
+        </section>
+
+
+
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+// start with first slide
+showSlide(index);
+
+// auto change every 4 seconds
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
+</script>
