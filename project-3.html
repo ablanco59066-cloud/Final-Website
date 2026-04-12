@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blanco Design</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/project-1.css"/>
+    </head>
+
+    <body>
+        <div class="nav container">
+            <a href="index.html">
+                <img src="img/Final Logo.png" alt="Logo">
+            </a>
+        <nav>
+            <ul>
+                <li><a href="index.html#Works">Works</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="slideshow">
+
+            <div class="slide active">
+                <img src="img/mockup 2.png">
+            </div>
+
+            <div class="slide">
+                <img src="img/mockup 3.png">
+            </div>
+
+            <div class="slide">
+                <img src="img/typecon mockup.png">
+            </div>
+
+            <button class="prev">←</button>
+            <button class="next">→</button>
+
+        </div>
+
+
+        <section id="Works" class="Works">
+            <article>
+                <div class="Title">
+                    <h1>TypeCon: Geometric: Pamphlet </h1>
+                    <h3> 5 1/2 x 8 1/2 inches </h3>
+                    <div class="empty"></div>
+                    <p>
+                        TypeCon: Geometric is a lanyard program using a geometric theme sourced from Art Deco architecture and typography. The event takes place in Miami Beach, where geometric shapes, typography, decor and linework of the 1920 Art Deco period take center stage.  The primary typeface, Acier Noir designed by A.M. Cassandre, is utilized for its bold and sharp characteristics associated with decorative art deco features such as repetition in lines and bold linework. Decorative details placed all around the pamphlet are inspired by forms and shapes that are repeated in art deco architecture found throughout Miami Beach.  
+                    </p>
+                </div>
+            </article>
+        </section>
+
+
+
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+// start with first slide
+showSlide(index);
+
+// auto change every 4 seconds
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
+</script>
