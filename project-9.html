@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blanco Design</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/project-1.css"/>
+    </head>
+
+    <body>
+        <div class="nav container">
+            <a href="index.html">
+                <img src="img/Final Logo.png" alt="Logo">
+            </a>
+        <nav>
+            <ul>
+                <li><a href="index.html#Works">Works</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="slideshow">
+
+            <div class="slide active">
+                <img src="img/Final Savia Brand Guide.png">
+            </div>
+
+            <div class="slide">
+                <img src="img/Free_Stationery_Mockup_6-2.png">
+            </div>
+
+            <div class="slide">
+                <img src="img/Billboard_Mockup_revised.png">
+            </div>
+
+            <button class="prev">←</button>
+            <button class="next">→</button>
+
+        </div>
+
+
+        <section id="Works" class="Works">
+            <article>
+                <div class="Title">
+                    <h1><Typo-Graphers></h1>
+                    <h3> 1320 x 2868 </h3>
+                    <div class="empty"></div>
+                    <p>
+                        An interactive pixel-based game draws inspiration from contemporary side-scroller mechanics. UI elements, including text boxes and environmental assets, embrace a maximalist aesthetic to enhance a fantasy atmosphere. Frame structures replace conventional text boxes, referencing a teaching board within gameplay. The header type, Jacquard 12, merges fantasy motifs with pixel styling, while the secondary typeface, Pixelify Sans, maintains visual cohesion across narrative and interface text. Characters are developed from an overarching story concept, populating a world with diverse fantastical species. Combat mechanics reinterpret typographic elements: page breaks serve as shields, and type functions as attacks. Enemy designs, such as creatures called runts, reflect typographic terminology through both form and playful frustration, reinforcing the game's conceptual integration of type and mechanics. 
+                    </p>
+                </div>
+            </article>
+        </section>
+
+
+
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+// start with first slide
+showSlide(index);
+
+// auto change every 4 seconds
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 4000);
+</script>
