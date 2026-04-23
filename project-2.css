@@ -286,19 +286,21 @@ nav ul li a {
 }
 
 .prev-project {
-  position: fixed;
+  position: flex;
   bottom: 30px;
   left: 30px;
   margin: 0;
   z-index: 1000;
+  margin-left: 75%;
 }
 
 .next-project {
-  position: fixed;
+  position: flex;
   bottom: 30px;
   right: 30px;
   margin: 0;
   z-index: 1000;
+  margin-right: 75%;
 }
 
 .text-close {
