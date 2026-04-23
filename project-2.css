@@ -285,22 +285,12 @@ nav ul li a {
   margin-top: 20px;
 }
 
-.prev-project {
-  position: flex;
-  bottom: 30px;
-  left: 30px;
-  margin: 0;
-  z-index: 1000;
-  margin-left: 75%;
-}
-
-.next-project {
-  position: flex;
-  bottom: 30px;
-  right: 30px;
-  margin: 0;
-  z-index: 1000;
-  margin-right: 75%;
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 30px;
 }
 
 .text-close {
