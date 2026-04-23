@@ -278,7 +278,7 @@ nav ul li a {
   margin-top: 0;
 }
 
-#learn-toggle:checked ~ .learn-more-content {
+#learn-toggle:checked + .learn-more-wrapper .learn-more-btn
   max-height: 300px;
   opacity: 1;
   transform: translateY(0);
@@ -298,7 +298,7 @@ nav ul li a {
 }
 
 /* toggle text */
-#learn-toggle:checked + .learn-more-btn .text-open {
+#learn-toggle:checked + .learn-more-wrapper .learn-more-btn {
   display: none;
 }
 
@@ -307,7 +307,7 @@ nav ul li a {
 }
 
 /* optional style change */
-#learn-toggle:checked + .learn-more-btn {
+#learn-toggle:checked + .learn-more-wrapper .learn-more-btn {
   background: #070707;
   color: white;
 }
