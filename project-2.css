@@ -287,10 +287,16 @@ nav ul li a {
 .next-project {
   display: block;
   width: fit-content;
-  margin-left: 80%;
+  margin-left: auto;   
   margin-top: 40px;
 }
 
+.prev-project {
+  display: block;
+  width: fit-content;
+  margin-right: auto;  
+  margin-top: 40px;
+}
 .text-close {
   display: none;
 }
